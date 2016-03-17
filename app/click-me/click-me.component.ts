@@ -2,9 +2,7 @@ import {Component} from 'angular2/core';
 
 @Component({
   selector: 'click-me',
-  template: `
-    <button (click)="onClickMe()">Click me!</button>
-    {{clickMessage}}`
+  templateUrl: 'app/click-me/click-me.component.html'
 })
 
 export class ClickMeComponent {
