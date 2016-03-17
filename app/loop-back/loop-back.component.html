@@ -1,0 +1,7 @@
+<!-- Angular only updates bindings/screen if we do something
+in response to async events such as keystrokes.
+
+We bind the keyup event to 0, the shortest statement... This is all
+that we need to make Angular happy.-->
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
